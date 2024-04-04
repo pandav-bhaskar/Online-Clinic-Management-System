@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="~/css/Login.css" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+</head>
+<body>
+    <div class="login14">
+        <img class="whatsapp-image-2024-01-29-at-05"
+             alt=""
+             src="~/images/Login.png" />
+
+        <div class="login-child"></div>
+        <div class="login15">Login</div>
+        <input class="login-item" type="text" />
+
+        <input class="login-inner" type="text" />
+
+        <div class="e-mail-id5">E-mail id</div>
+        <div class="password5">Password</div>
+        <button class="login-child1" id="rectangleButton"></button>
+        <script>
+            document.getElementById("rectangleButton").addEventListener("click", function () {
+                window.location.href = "@Url.Action("Index", "Admin")";
+            });
+        </script>
+        
+        <a asp-controller="Admin" asp-action="Index" class="login16" id="login">Login</a>
+        <a asp-controller="Register" asp-action="Index" class="create-a-new4" id="createANew">Create a New Account</a>
+
+        <img class="tooth-icon5" alt="" src="~/images/img_tooth_51x45.png" />
+
+        <div class="clinic5">Clinic</div>
+        <a asp-controller="Receptionist" asp-action="Index" class="receptionist7" id="receptionist">Receptionist</a>
+        <a asp-controller="About" asp-action="Index" class="about5" id="about">About</a>
+        <a asp-controller="Contact" asp-action="Index" class="contact5" id="contact">Contact</a>
+        <a asp-controller="Register" asp-action="Index" class="register7" id="register">Register</a>
+        <a asp-controller="Laboratorian" asp-action="Index" class="laboratorian7" id="laboratorian">Laboratorian</a>
+        <a asp-controller="Doctor" asp-action="Index" class="doctor7" id="doctor">Doctor</a>
+
+
+    </div>
+
+    <script>
+        <script>
+            document.getElementById("rectangleButton").addEventListener("click", function () {
+                window.location.href = "@Url.Action("Index", "Admin")";
+            });
+    </script>
+
+    var login = document.getElementById("login");
+        if (login) {
+            login.addEventListener("click", function (e) {
+                window.location.href = "~/Admin/Index";
+            });
+        }
+
+        var createANew = document.getElementById("createANew");
+        if (createANew) {
+            createANew.addEventListener("click", function (e) {
+                window.location.href = "register.html";
+            });
+        }
+
+        var receptionist = document.getElementById("receptionist");
+        if (receptionist) {
+            receptionist.addEventListener("click", function (e) {
+                window.location.href = "./receptionist.html";
+            });
+        }
+
+        var about = document.getElementById("about");
+        if (about) {
+            about.addEventListener("click", function (e) {
+                window.location.href = "./about.html";
+            });
+        }
+
+        var contact = document.getElementById("contact");
+        if (contact) {
+            contact.addEventListener("click", function (e) {
+                window.location.href = "./contact.html";
+            });
+        }
+
+        var register = document.getElementById("register");
+        if (register) {
+            register.addEventListener("click", function (e) {
+                window.location.href = "register.html";
+            });
+        }
+
+        var login1 = document.getElementById("login1");
+        if (login1) {
+            login1.addEventListener("click", function (e) {
+                window.location.href = "./login.html";
+            });
+        }
+
+        var laboratorian = document.getElementById("laboratorian");
+        if (laboratorian) {
+            laboratorian.addEventListener("click", function (e) {
+                window.location.href = "./laboratorian.html";
+            });
+        }
+
+        var doctor = document.getElementById("doctor");
+        if (doctor) {
+            doctor.addEventListener("click", function (e) {
+                window.location.href = "./doc-detail.html";
+            });
+        }
+    </script>
+</body>
+</html>
+
+
